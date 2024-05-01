@@ -1,3 +1,5 @@
+import json
+
 # Classes
 class User:
     def __init__(self, username, password, description) -> None:
@@ -17,3 +19,5 @@ def update_user():
 
 def delete_user():
     pass
+
+# DB
