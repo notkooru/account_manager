@@ -7,6 +7,9 @@ class User:
         self.password = password
         self.description = description
 
+# DB
+users = []
+
 # CRUD
 def create_user():
     pass
@@ -19,9 +22,6 @@ def update_user():
 
 def delete_user():
     pass
-
-# DB
-users = []
 
 def save_database():
     global users
