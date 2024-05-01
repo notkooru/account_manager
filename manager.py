@@ -11,8 +11,9 @@ class User:
 users = []
 
 
-def create_user():
-    pass
+def create_user(username, password, description=""):
+    new_user = User(username, password, description)
+    users.append(new_user)
 
 def read_users():
     pass
