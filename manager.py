@@ -21,3 +21,17 @@ def delete_user():
     pass
 
 # DB
+users = []
+
+def save_database():
+    global users
+    db = json.dumps(users, indent=4)
+    f = open("database.txt", "w")
+    f.write(db)
+    f.close()
+
+def load_database():
+    global users
+    f = open("database.txt", "r")
+    users = json.loads(f.read())
+    f.close()
