@@ -16,7 +16,8 @@ def create_user(username, password, description=""):
     users.append(new_user)
 
 def read_users():
-    pass
+    for user in users:
+        print(user.username, user.password, user.description)
 
 def update_user():
     pass
