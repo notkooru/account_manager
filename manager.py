@@ -1,15 +1,12 @@
 import json
 
-
 class User:
     def __init__(self, username, password, description) -> None:
         self.username = username
         self.password = password
         self.description = description
 
-
 users = []
-
 
 def create_user(username, password, description=""):
     new_user = User(username, password, description)
@@ -24,7 +21,6 @@ def update_user():
 
 def delete_user():
     pass
-
 
 def save_database():
     global users
